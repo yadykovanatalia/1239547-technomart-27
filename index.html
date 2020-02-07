@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Интернет-магазин «Техномарт»</title>
   </head>
   <body>
@@ -48,7 +49,7 @@
 
     <main>
       <section>
-        <h2>Промо-информация</h2>
+        <h2 class="visually-hidden">Промо-информация</h2>
         <div>
           <h3>Материалы</h3>
           <a href="#">На любой вкус</a>
@@ -94,71 +95,43 @@
         <a href="#">Все популярные товары</a>
         <ul>
           <li>
-            <h3>
-                <a href="catalog-item.html">
-                    <span>Перфоратор BOSCH</span>
-                    <span>BFG 9000</span>
-                </a>
-            </h3>
-            <p>
-                <a href="catalog-item.html">
-                    <img src="img/perforator-bosch-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
-                </a>
-            </p>
-            <p>
+            <a href="catalog-item.html">
+              <h3>Перфоратор BOSCH BFG 9000</h3>
+              <img src="img/perforator-bosch-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+              <p>
                 <span>32500 Р.</span>
                 <span>25500 Р.</span>
-            </p>
+              </p>
+            </a>
           </li>
           <li>
-            <h3>
-                <a href="catalog-item.html">
-                    <span>Перфоратор BOSCH</span>
-                    <span>BFG 3000</span>
-                </a>
-            </h3>
-            <p>
-                <a href="catalog-item.html">
-                    <img src="img/perforator-bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-                </a>
-            </p>
-            <p>
+            <a href="catalog-item.html">
+              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <img src="img/perforator-bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <p>
                 <span>22500 Р.</span>
                 <span>15500 Р.</span>
-            </p>
+              </p>
+            </a>
           </li>
           <li>
-            <h3>
-                <a href="catalog-item.html">
-                    <span>Перфоратор BOSCH</span>
-                    <span>BFG 6000</span>
-                </a>
-            </h3>
-            <p>
-                <a href="catalog-item.html">
-                    <img src="img/perforator-bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-                </a>
-            </p>
-            <p>
+            <a href="catalog-item.html">
+              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <img src="img/perforator-bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <p>
                 <span>30500 Р.</span>
                 <span>25500 Р.</span>
-            </p>
+              </p>
+            </a>
           </li>
           <li>
-            <h3>
-                <a href="catalog-item.html">
-                    <span>Перфоратор BOSCH</span>
-                    <span>BFG 2000</span>
-                </a>
-            </h3>
-            <p>
-                <a href="catalog-item.html">
-                    <img src="img/perforator-bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-                </a>
-            </p>
-            <p>
+            <a href="catalog-item.html">
+              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <img src="img/perforator-bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <p>
                 <span>12500 Р.</span>
-            </p>
+              </p>
+            </a>
           </li>
         </ul>
       </section>
@@ -203,7 +176,7 @@
               <span>Кредит</span>
               Залезть в долговую яму стало проще! 
               Кредитные консультанты придут вам на помощь.
-              <button type="button">Отправить заявку</button>
+              <a href="#">Отправить заявку</a>
             </p>
             <!--Договор кредитования-->
           </li>
@@ -291,15 +264,15 @@
       
     </footer>
     <section>
-      <h2>Форма обратной связи</h2>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="user-name">Ваше имя:</label>
-          <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+          <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия" required>
         </p>
         <p>
           <label for="user-email">Ваш e-mail:</label>
-          <input id="user-email" type="email" name="user-email" placeholder="e-mail@example.com">
+          <input id="user-email" type="email" name="user-email" placeholder="e-mail@example.com" required>
         </p>
         <p>
           <label for="user-letter">Текст письма:</label>
@@ -307,6 +280,14 @@
         </p>
         <button type="submit">Отправить</button>
       </form>
+      <button type="button">Закрыть</button>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map-big.jpg" width="970" height="476" alt="Офис интернет-магазина «Техномарт» по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button type="button">Закрыть</button>
     </section>
   </body>
 </html>
