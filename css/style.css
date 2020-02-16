@@ -103,6 +103,10 @@ a {
     background-color: #161d29;
 }
 
+.header-link_red {
+    background-color: #ee3643;
+}
+
 .checkout-link {
     background-color: #63a63e;
 }
@@ -145,11 +149,16 @@ a {
 .service-navigation,
 .footer-navigation,
 .footer-navigation-promo,
-.footer-social {
+.footer-social,
+.breadcrumbs,
+.filter-list,
+.sorting ul,
+.pagination-list {
     list-style: none;
 }
 
-.user-navigation a {
+.user-navigation a,
+.user-login {
     font-size: 21px;
 
     text-align: center;
@@ -159,11 +168,15 @@ a {
 }
 
 .user-navigation a:hover,
-.user-navigation a:focus {
+.user-navigation a:focus,
+.user-link:hover,
+.user-link:focus {
     color: #ee3643;
 }
 
-.user-navigation a:active {
+.user-navigation a:active,
+.user-login:active,
+.user-link:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -345,7 +358,8 @@ a {
     opacity: 0.3;
 }
 
-.service {
+.service,
+.item-about {
     color: #000000;
 
     background-color: #f4f7f9;
@@ -353,7 +367,8 @@ a {
 
 .service h2,
 .about h2,
-.contacts h2 {
+.contacts h2,
+.item-about h2 {
     font-size: 30px;
     font-weight: 400;
 
@@ -362,7 +377,8 @@ a {
 
 .service p,
 .contacts p,
-.about p {
+.about p,
+.item-about p {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.5;
@@ -453,7 +469,8 @@ a {
     display: none;
 }
 
-.modal_letter {
+.modal_letter,
+.modal-cart {
     border-top: 7px solid #ff5357;
     box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
@@ -478,10 +495,156 @@ a {
     resize: none;
 }
 
-.send-letter {
+.send-letter,
+.cart-action {
     background-color: #f4f4f4;
 }
 
 .modal_map {
     box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
+}
+
+.user-link {
+    font-size: 14px;
+    color: #32425c;
+
+    text-decoration: underline;
+}
+
+.breadcrumbs {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+
+    text-transform: uppercase;
+}
+
+.breadcrumbs a {
+    color: #000000;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 400;
+
+    background-color: #f2f6f8;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.filter-title {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+
+    text-transform: uppercase;
+    background-color: #f7f3ec;
+}
+
+.filter {
+    font-family: "PT Sans", Arial, sans-serif;
+    
+    text-transform: uppercase;
+}
+
+.filter legend {
+    font-size: 17px;
+    font-weight: 700;
+
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.price-from,
+.price-to {
+    font-size: 17px;
+
+    text-align: center;
+    background-color: #f7f3ec;
+    border: none;
+}
+
+.filter-price {
+    background-color: #f7f3ec;
+}
+
+.filter-list {
+    font-size: 15px;
+}
+
+.filter-send {
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+}
+
+.sorting {
+    font-family: "PT Sans", Arial, sans-serif;
+    
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: #f7f3ec;
+}
+
+.sorting a {
+    color: rgba(0, 0, 0, 0.302);
+    
+    text-decoration: underline dotted #ee3643;
+}
+
+.sorting a:hover,
+.sorting a:focus {
+    color: #000000;
+    text-decoration: underline solid #ee3643;
+}
+
+.sorting .sorting-active,
+.sorting a:active {
+    color: #ee3643;
+    text-decoration: none;
+}
+
+.catalog-item_active .catalog-item-image {
+    opacity: 0;
+}
+
+.catalog-item_active .catalog-item-btn {
+    opacity: 1;
+}
+
+.pagination-list a {
+    font-family: "PT Sans", Arial, sans-serif;
+
+    font-size: 13px;
+    color: #000000;
+    text-transform: uppercase;
+    
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+}
+
+.pagination-list .pagination-current {
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+    border-color: #bdc6ca;
+}
+.pagination-list a:active {
+    border-color: #ee3643;
+}
+.cart-message {
+    font-size: 30px;
+}
+.btn_white {
+    color: #000000;
+    background-color: #ffffff;
+}
+.btn_white:hover,
+.btn_white:focus {
+    color: #ffffff;
 }
