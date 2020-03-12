@@ -5,7 +5,7 @@
     <title>Интернет-магазин «Техномарт»</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -115,59 +115,59 @@
         </div>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <a href="catalog-item.html">
+            <a href="#">
               <img src="img/perforator-bosch-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000" class="catalog-item-image">
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 9000</h3>
-              <p class="catalog-item-btn">
-                <button type="button" class="btn-cart">Купить</button>
-                <button type="button" class="btn-bookmark">В закладки</button>
-              </p>
               <p class="catalog-item-price">
                 <span class="price-old">32500 Р.</span>
                 <span class="price-current">25500 Р.</span>
               </p>
             </a>
+            <p class="catalog-item-btn">
+              <button type="button" class="btn-cart">Купить</button>
+              <button type="button" class="btn-bookmark">В закладки</button>
+            </p>
           </li>
           <li class="catalog-item">
-            <a href="catalog-item.html">
+            <a href="#">
               <img src="img/perforator-bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000" class="catalog-item-image">
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
-              <p class="catalog-item-btn">
-                <button type="button" class="btn-cart">Купить</button>
-                <button type="button" class="btn-bookmark">В закладки</button>
-              </p>
               <p class="catalog-item-price">
                 <span class="price-old">22500 Р.</span>
                 <span class="price-current">15500 Р.</span>
               </p>
             </a>
+            <p class="catalog-item-btn">
+              <button type="button" class="btn-cart">Купить</button>
+              <button type="button" class="btn-bookmark">В закладки</button>
+            </p>
           </li>
           <li class="catalog-item">
-            <a href="catalog-item.html">
+            <a href="#">
               <img src="img/perforator-bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000" class="catalog-item-image">
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
-              <p class="catalog-item-btn">
-                <button type="button" class="btn-cart">Купить</button>
-                <button type="button" class="btn-bookmark">В закладки</button>
-              </p>
               <p class="catalog-item-price">
                 <span class="price-old">30500 Р.</span>
                 <span class="price-current">25500 Р.</span>
               </p>
             </a>
+            <p class="catalog-item-btn">
+              <button type="button" class="btn-cart">Купить</button>
+              <button type="button" class="btn-bookmark">В закладки</button>
+            </p>
           </li>
           <li class="catalog-item catalog-item_new">
-            <a href="catalog-item.html">
+            <a href="#">
               <img src="img/perforator-bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000" class="catalog-item-image">
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
-              <p class="catalog-item-btn">
-                <button type="button" class="btn-cart">Купить</button>
-                <button type="button" class="btn-bookmark">В закладки</button>
-              </p>
               <p class="catalog-item-price">
                 <span class="price-current">12500 Р.</span>
               </p>
             </a>
+            <p class="catalog-item-btn">
+              <button type="button" class="btn-cart">Купить</button>
+              <button type="button" class="btn-bookmark">В закладки</button>
+            </p>
           </li>
         </ul>
       </section>
@@ -250,10 +250,10 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,
             заехав в наш офис:</p>
-          <a href="#">
+          <a href="#" class="map-link">
             <img src="img/map.jpg" width="300" height="158" alt="Карта с месторасположением интернет-магазина «Техномарт»">
           </a>
-          <a href="#" class="btn">Заблудились? Напишите нам!</a>
+          <a href="#" class="btn feedback-link">Заблудились? Напишите нам!</a>
         </section>
       </div>
       
@@ -326,16 +326,16 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-form_fields">
           <div class="feedback-form_field">
-            <label for="user-name">Ваше имя:</label>
-            <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия" required>
+            <label for="feedback-name">Ваше имя:</label>
+            <input class="feedback-form_name" id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
           </div>
           <div class="feedback-form_field">
-            <label for="user-email">Ваш e-mail:</label>
-            <input id="user-email" type="email" name="user-email" placeholder="e-mail@example.com" required>
+            <label for="feedback-email">Ваш e-mail:</label>
+            <input class="feedback-form_email" id="feedback-email" type="email" name="feedback-email" placeholder="e-mail@example.com">
           </div>
           <div class="feedback-form_field feedback-form_full">
-            <label for="user-letter">Текст письма:</label>
-            <textarea id="user-letter" type="password" name="letter" placeholder="В свободной форме"></textarea>
+            <label for="letter">Текст письма:</label>
+            <textarea class="feedback-form_letter" id="letter" name="letter" placeholder="В свободной форме"></textarea>
           </div>
         </div>
         <div class="send-feedback"><button type="submit" class="btn">Отправить</button></div>
@@ -344,7 +344,17 @@
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img src="img/map-big.jpg" width="970" height="476" alt="Офис интернет-магазина «Техномарт» по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1584042569896!5m2!1sru!2sru" width="940" height="476" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <img src="img/map-big.jpg" width="940" height="476" alt="Офис интернет-магазина «Техномарт» по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <button type="button" class="btn-close" aria-label="Закрыть модальное окно"></button>
+    </section>
+    <section class="modal modal-cart">
+      <h2 class="visually-hidden">Добавление товара в корзину</h2>
+      <p class="cart-message">Товар добавлен в корзину!</p>
+      <p class="cart-action">
+          <a href="#" class="btn btn_red">Оформить заказ</a>
+          <button type="button" class="btn btn_white">Продолжить покупки</button>
+      </p>
       <button type="button" class="btn-close" aria-label="Закрыть модальное окно"></button>
     </section>
     <script src="js/script.js"></script>
