@@ -340,6 +340,7 @@ a {
 .user-navigation a,
 .user-login {
     display: inline-block;
+    vertical-align: middle;
     padding-top: 11px;
     padding-right: 24px;
     padding-bottom: 11px;
@@ -582,6 +583,7 @@ a {
 
 .promo-item a {
     display: inline-block;
+    vertical-align: middle;
     margin-left: 2px;
     max-width: 135px;
     width: 100%;
@@ -680,6 +682,7 @@ a {
     position: absolute;
     bottom: 22px;
     display: inline-block;
+    vertical-align: middle;
     left: 26px;
     padding: 13px 46px 11px 51px;
 
@@ -806,6 +809,7 @@ a {
 
 .popular-title .btn {
     display: inline-block;
+    vertical-align: middle;
     width: 253px;
     padding-top: 13px;
     padding-right: 20px;
@@ -939,6 +943,7 @@ a {
     position: relative;
     left: 42px;
     display: inline-block;
+    vertical-align: middle;
     padding-top: 11px;
     padding-right: 21px;
     padding-bottom: 10px;
@@ -1305,6 +1310,7 @@ a {
     content: '';
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     top: -2px;
     width: 25px;
     height: 2px;
@@ -1316,12 +1322,13 @@ a {
 
 .about .btn,
 .contacts .btn {
-    display: inline-block;
+    display: inline-block;    
+    vertical-align: middle;
+    margin-top: 5px;
     padding-top: 13px;
     padding-right: 10px;
     padding-bottom: 13px;
     padding-left: 10px;
-    margin-top: 5px;
     
     font-size: 14px;
 }
@@ -1602,7 +1609,8 @@ a {
 
 .price-from,
 .price-to {    
-    display: inline-block;
+    display: inline-block; 
+    vertical-align: middle;
     width: 95px;
     padding-top: 9px;
     padding-right: 18px;
@@ -2021,7 +2029,7 @@ a {
     padding-right: 80px;
     padding-bottom: 37px;
     padding-left: 80px;
-    
+
     background-color: #f4f4f4;
 }
 
@@ -2067,7 +2075,8 @@ a {
 }
 
 .cart-action .btn {
-    display: inline-block;
+    display: inline-block; 
+    vertical-align: middle;
     width: 220px;
     margin-right: 9px;
     padding-top: 14px;
