@@ -390,6 +390,10 @@ a {
     fill: #32425c;
 }
 
+.login-link:active .login-link_icon {
+    fill: #c5c5c5;
+}
+
 .header-login {
     width: 299px;
 }
