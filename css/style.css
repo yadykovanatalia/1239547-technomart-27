@@ -71,7 +71,7 @@ a {
 }
 
 .header-top {
-    margin-bottom: 48px;
+    margin-bottom: 46px;
 
     font: inherit;
 
@@ -262,15 +262,20 @@ a {
 .header-title {
     width: 250px;
     margin: 0;
+    padding-top: 3px;
     padding-left: 53px;
-    padding-bottom: 38px;
+    padding-bottom: 40px;
 
     font-style: italic;
     font-size: 16px;
     font-weight: normal;
-    line-height: 1.5;
+    line-height: 1.49;
 
     color: #ee3643;
+}
+
+.header-title.header-title_inner {
+    width: 270px;
 }
 
 .header-phone {
@@ -278,9 +283,9 @@ a {
     display: block;
     width: 100%;
     height: 45px;
-    margin-bottom: 7px;
-    padding-top: 8px;
-    padding-left: 41px;
+    margin-bottom: 9px;
+    padding-top: 9px;
+    padding-left: 45px;
     padding-right: 22px;
 
     font-size: 21px;
@@ -296,8 +301,8 @@ a {
     position: absolute;
     width: 19px;
     height: 19px;
-    top: 8px;
-    left: 11px;
+    top: 10px;
+    left: 12px;
     background-image: url(../img/icon-phone.svg);
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -341,7 +346,7 @@ a {
 .user-login {
     display: inline-block;
     vertical-align: middle;
-    padding-top: 11px;
+    padding-top: 12px;
     padding-right: 24px;
     padding-bottom: 11px;
     padding-left: 26px;
@@ -375,8 +380,8 @@ a {
 
 .login-link_icon {
     position: absolute;
-    left: 13px;
-    top: 12px;
+    left: 14px;
+    top: 14px;
     fill: #c5c5c5
 }
 
@@ -387,7 +392,14 @@ a {
 
 .header-login {
     width: 299px;
-    margin-left: 51px;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    background-color: #ffffff;
 }
 
 .user-link {
@@ -401,10 +413,10 @@ a {
 
 .user-login {
     position: relative;
-    height: 45px;
-    margin-bottom: 6px;
-    padding-right: 66px;
-    padding-bottom: 11px;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 47px;
 }
 
@@ -412,7 +424,15 @@ a {
     position: absolute;
     left: 14px;
     fill: #c5c5c5;
+}
 
+.user-logout {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-right: 8px;
+    padding-left: 30px;
 }
 
 .user-logout_icon {
@@ -443,10 +463,15 @@ a {
 }
 
 .user-login:hover .user-login_icon,
-.user-login:hover .user-logout_icon,
+.user-logout:hover .user-logout_icon,
 .user-login:focus .user-login_icon,
-.user-login:focus .user-logout_icon {
+.user-logout:focus .user-logout_icon {
     fill: #32425c;
+}
+
+.user-login:active .user-login_icon,
+.user-logout:active .user-logout_icon {
+    fill: #c5c5c5;
 }
 
 .catalog-container {
@@ -457,8 +482,11 @@ a {
 .breadcrumbs {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 23px;
+    margin-right: 0;
+    margin-bottom: 23px;
+    margin-left: 0;
     padding: 0;
-    margin: 23px 0 24px;
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
@@ -476,6 +504,7 @@ a {
 }
 
 .breadcrumbs-link_home {
+    display: block;
     position: relative;
     width: 14px;
     height: 12px;
@@ -486,7 +515,7 @@ a {
 }
 
 .breadcrumbs li:not(:first-child)::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -647,9 +676,12 @@ a {
 
 .promo-slider li {
     display: none;
-    height: 266px;
-
+    padding: 22px 24px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    background-position: 0 0;
+    background-repeat: no-repeat;
 }
 
 .promo-slider p {
@@ -657,20 +689,12 @@ a {
 }
 
 .promo-slider p:first-child {
-    position: absolute;
-    left: 25px;
-    top: 22px;
-    padding-bottom: 4px;
-
     text-transform: uppercase;
     font-size: 38px;
+    padding-bottom: 4px;
 }
 
 .promo-slider p:nth-child(2) {
-    position: absolute;
-    top: 64px;
-    left: 26px;
-
     font-size: 18px;
 }
 
@@ -678,12 +702,18 @@ a {
     display: block;
 }
 
+.promo-slider_perforator {
+    background-image: url(../img/slider-1.jpg);
+}
+
+.promo-slider_drill {
+    background-image: url(../img/slider-2.jpg);
+}
+
 .promo-slider a {
-    position: absolute;
-    bottom: 22px;
     display: inline-block;
     vertical-align: middle;
-    left: 26px;
+    margin-top: 124px;
     padding: 13px 46px 11px 51px;
 
     font-size: 14px;
@@ -823,7 +853,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin-top: 22px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 
 .catalog-filter {
@@ -844,7 +874,9 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 0;
     margin-right: 5px;
+    margin-bottom: 0;
     margin-left: auto;
     padding: 0;
     width: 355px;
@@ -852,6 +884,8 @@ a {
 
 .catalog-sorting-ascdesc {
     display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-right: 17px;
 }
 
@@ -983,6 +1017,8 @@ a {
     display: block;
     top: 28px;
     width: 100%;
+    padding-right: 42px;
+    padding-left: 42px;
 
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
@@ -995,18 +1031,18 @@ a {
     opacity: 1;
 }
 
-.btn-cart {
+.catalog-item .btn-cart {
     position: relative;
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
     width: 135px;
-    margin-right: auto;
     margin-bottom: 8px;
-    margin-left: auto;
     padding-top: 13px;
-    padding-bottom: 7px;
+    padding-bottom: 9px;
 
     color: #ffffff;
     text-transform: uppercase;
+    text-align: center;
 
     background-color: #63a63e;
     border: none;
@@ -1027,7 +1063,7 @@ a {
 }
 
 .btn-cart::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 20px;
     height: 18px;
@@ -1286,16 +1322,16 @@ a {
 .index-info {
     display: flex;
     justify-content: space-between;
-    padding-top: 79px;
+    padding-top: 80px;
     padding-bottom: 85px;
 }
 
 .about {
-    width: 580px;
+    width: 540px;
 }
 
 .partners-list {
-    margin-top: 12px;
+    margin-top: 15px;
     padding-left: 0;
 }
 
@@ -1307,14 +1343,14 @@ a {
 }
 
 .partners-list li::before {
-    content: '';
+    content: "";
     position: relative;
     display: inline-block;
     vertical-align: middle;
     top: -2px;
     width: 25px;
     height: 2px;
-    margin-right: 10px;
+    margin-right: 11px;
     vertical-align: middle;
 
     background-color: #ee3643;
@@ -1324,7 +1360,7 @@ a {
 .contacts .btn {
     display: inline-block;    
     vertical-align: middle;
-    margin-top: 5px;
+    margin-top: 4px;
     padding-top: 13px;
     padding-right: 10px;
     padding-bottom: 13px;
@@ -1346,6 +1382,11 @@ a {
     margin-top: 26px;
 }
 
+.about .about-partners {
+    width: 390px;
+    margin-top: 24px;
+}
+
 .contacts {
     width: 300px;
 }
@@ -1355,13 +1396,13 @@ a {
 }
 
 .contacts img {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 18px;
+    margin-bottom: 32px;
 }
 
 .main-footer {
     background-color: #32425c;
-    padding-bottom: 32px;
+    padding-bottom: 30px;
 }
 
 .main-footer .container {
@@ -1405,10 +1446,12 @@ a {
 }
 
 .footer-contacts {
-    width: 320px;
+    width: 327px;
     padding-left: 4px;
 
-    line-height: 1.5;
+    font-size: 18px;
+
+    line-height: 1.4;
 }
 
 .footer-navigation-promo {
@@ -1473,7 +1516,7 @@ a {
 }
 
 .footer-feedback {
-    width: 149px;
+    width: 152px;
 }
 
 .footer-developer {
@@ -1494,7 +1537,7 @@ a {
 }
 
 .footer-social_vk::before {
-    content: '';
+    content: "";
     width: 26px;
     height: 15px;
 
@@ -1504,7 +1547,7 @@ a {
 }
 
 .footer-social_fb::before {
-    content: '';
+    content: "";
     width: 12px;
     height: 22px;
 
@@ -1514,7 +1557,7 @@ a {
 }
 
 .footer-social_insta::before {
-    content: '';
+    content: "";
     width: 21px;
     height: 21px;
 
@@ -1553,10 +1596,10 @@ a {
 
 .title {
     margin: 0;
-    padding-top: 28px;
+    padding-top: 30px;
     padding-right: 23px;
     padding-bottom: 28px;
-    padding-left: 30px;
+    padding-left: 28px;
     
     font-size: 30px;
     font-weight: 400;
@@ -1568,8 +1611,8 @@ a {
 
 .filter-title {
     margin: 0;
-    padding-top: 12px;
-    padding-left: 20px;
+    padding-top: 11px;
+    padding-left: 19px;
     padding-bottom: 13px;
 
     font-family: "PT Sans", Arial, sans-serif;
@@ -1613,7 +1656,7 @@ a {
     vertical-align: middle;
     width: 95px;
     padding-top: 9px;
-    padding-right: 18px;
+    padding-right: 14px;
     padding-bottom: 10px;
     padding-left: 18px;
     -moz-appearance: textfield;
@@ -1664,6 +1707,7 @@ a {
     height: 22px;
     top: 30px;
 
+    background-color: transparent;
     background-image: url(../img/filter-button.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1703,7 +1747,7 @@ a {
 }
 
 .filter-list_check::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     width: 27px;
@@ -1731,7 +1775,7 @@ a {
 }
 
 .filter-list_radio::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     width: 25px;
@@ -1778,6 +1822,8 @@ a {
 }
 
 .catalog-sorting {
+    padding-top: 11px;
+    padding-bottom: 13px;
     padding-left: 20px;
 
     font-family: "PT Sans", Arial, sans-serif;
@@ -1785,6 +1831,11 @@ a {
     font-size: 13px;
     text-transform: uppercase;
     background-color: #f7f3ec;
+}
+
+.catalog-sorting p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .catalog-sorting a {
@@ -1807,7 +1858,7 @@ a {
     display: flex;
     padding: 0;
     margin: 0;
-    margin-top: 42px;
+    margin-top: 31px;
 }
 
 .catalog-pagination-list a {
@@ -1997,8 +2048,8 @@ a {
     justify-content: space-between;
     padding-left: 80px;
     padding-right: 80px;
-    padding-top: 45px;
-    padding-bottom: 30px;
+    padding-top: 47px;
+    padding-bottom: 35px;
 }
 
 .feedback-form_field {
@@ -2025,7 +2076,7 @@ a {
 }
 
 .send-feedback {
-    padding-top: 37px;
+    padding-top: 36px;
     padding-right: 80px;
     padding-bottom: 37px;
     padding-left: 80px;
@@ -2035,8 +2086,10 @@ a {
 
 .send-feedback .btn {
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 13px;
+    padding-bottom: 11px;
+
+    font-size: 14px;
 
     cursor: pointer;
 }
